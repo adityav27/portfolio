@@ -233,11 +233,42 @@ h2 {
   line-height: 1.1;
 }
 
+.iit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(124, 58, 237, 0.05);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  color: var(--bp-silver);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  cursor: default;
+  letter-spacing: 0.5px;
+}
+
+.iit-badge:hover {
+  background: rgba(124, 58, 237, 0.2);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+  transform: translateY(-2px);
+}
+
+.highlight-iit {
+  color: var(--bp-violet);
+  text-shadow: 0 0 10px rgba(124,58,237,0.3);
+  font-weight: 700;
+}
+
 .hero-tagline {
   font-family: var(--font-mono);
   font-size: 0.95rem;
   color: var(--bp-violet);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   letter-spacing: 0.5px;
 }
 
