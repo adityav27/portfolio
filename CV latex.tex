@@ -1,0 +1,208 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt}
+
+% Margins for 1-page fit
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumePOR}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} $|$ \textit{\small#3} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE ADITYA VISHWAKARMA} \\ \vspace{5pt}
+    \small \faPhone \hspace{1pt} +91-7067015005 $|$ 
+    \faEnvelope \hspace{1pt} \href{mailto:adityav@iitg.ac.in}{adityav@iitg.ac.in} $|$ 
+    \faLinkedin \hspace{1pt} \href{https://linkedin.com/in/adityav27}{linkedin.com/in/adityav27} $|$
+    \faGithub \hspace{1pt} \href{https://github.com/adityav27}{github.com/adityav27} $|$
+    \faGlobe \hspace{1pt} \href{https://adityav27.github.io/}{adityav27.github.io}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Guwahati}{Aug 2024 -- Present}
+      {Bachelor of Technology in Engineering Physics}{CGPA: 7.12}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS (Reverse Chronological)-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Open Food Facts (Dart SDK)} $|$ \emph{Open Source} $|$ \href{https://github.com/openfoodfacts/openfoodfacts-dart/pull/1215}{\faGithub \hspace{1mm} PR \#1215} $|$ \href{https://github.com/openfoodfacts/openfoodfacts-dart/pull/1212}{\faGithub \hspace{1mm} PR \#1212}}{Mar 2026 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Created a line-by-line \textbf{TSV parser} with \textbf{O(L)} space complexity, processing \textbf{500MB} (\textbf{4.37M} rows) in \textbf{9.8s}.}
+            \resumeItem{Validated column headers and added unit tests, achieving a \textbf{99.96\%} parsing success rate across all datasets.}
+            \resumeItem{Fixed legacy crashes by migrating \texttt{product\_quantity} from \textbf{int?} to \textbf{num?} to safely handle decimal values.}
+            \resumeItem{Delivered backward-compatible \texttt{\textbf{@deprecated}} bridges for \texttt{quantityString} to ensure zero downtime for clients.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Vehicle Route Optimization App} $|$ \emph{Kriti 2026} $|$ \href{https://github.com/mehul-v0/kriti2026_optimisation}{\faGithub \hspace{1mm} bit.ly/velora\_opti}}{Jan 2026 -- Mar 2026}
+          \resumeItemListStart
+            \resumeItem{Designed a cross-platform \textbf{Flutter} application with \textbf{Supabase} backend for complex optimization workflows.}
+            \resumeItem{Rendered route visualizations and analytics dashboards using \textbf{Leaflet}, \textbf{fl\_chart}, and \textbf{ValueNotifier}.}
+            \resumeItem{Automated multi-format data export pipelines to generate \textbf{JSON}, \textbf{Excel}, and \textbf{PDF} reports seamlessly.}
+            \resumeItem{Reduced route costs on MT-CVRPTW benchmarks using a custom \textbf{C++17 ALNS} solver with \textbf{Flask} APIs and \textbf{OpenRouteService}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Out of Sight --- 3D Stealth Game} $|$ \emph{Kriti 2026} $|$ \href{https://github.com/adityav27/GDAI_Gamejam}{\faGithub \hspace{1mm} bit.ly/GDAI-Gamejam}}{Feb 2026 -- Mar 2026}
+          \resumeItemListStart
+            \resumeItem{Programmed a 3D third-person stealth game on \textbf{Godot 4.5} integrating \textbf{FSM-driven} enemy AI architectures.}
+            \resumeItem{Implemented \textbf{NavMesh} pathfinding, \textbf{RayCast3D} vision detection, and stamina movement via \textbf{Jolt Physics}.}
+            \resumeItem{Wrote custom \textbf{GLSL} shaders for player invisibility effects and procedural \textbf{skybox} rendering systems.}
+            \resumeItem{Optimized runtime performance using pre-baked \textbf{Terrain3D} NavMeshes and throttled path recalculation.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{IITGCampusSync} $|$ \emph{Coding Club IITG} $|$ \href{https://github.com/IITGCampusSyncTeam/IITGCampusSync}{\faGithub \hspace{1mm} bit.ly/IITGCampusSync}}{Aug 2025 -- Oct 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a personalized tag recommendation engine using \textbf{MongoDB} and \textbf{Mongoose} schemas.}
+            \resumeItem{Modeled many-to-many data relationships across collections supporting concurrent campus users.}
+            \resumeItem{Exposed production-grade \textbf{REST API} endpoints with \textbf{Node.js} and \textbf{Express.js} for event management.}
+            \resumeItem{Enforced referential integrity across collections using atomic \textbf{MongoDB} \texttt{\textbf{\$pull}} and \texttt{\textbf{\$addToSet}} operations.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Dart, JavaScript, Python, C\#, GDScript, C, HTML, CSS} \\ \vspace{2pt}
+     \textbf{Technologies}{: Flutter, Node.js, Express.js, Supabase, MongoDB, PostgreSQL, Godot, Unity} \\ \vspace{2pt}
+     \textbf{Tools \& Workflows}{: Git, GitHub, Postman, Docker}
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+%-----------POSITION OF RESPONSIBILITY-----------
+\section{POSITION OF RESPONSIBILITY}
+  \resumeSubHeadingListStart
+    \resumePOR
+      {Student's Web Committee (SWC), IIT Guwahati}{Apr 2026 -- Present}
+      {Senior App Developer}
+      \resumeItemListStart
+        \resumeItem{Lead application development, optimized code architectures, and mentored developers for campus apps.}
+      \resumeItemListEnd
+
+    \resumePOR
+      {GameDev \& Esports Club, IIT Guwahati}{Jun 2025 -- Apr 2026}
+      {Game Developer}
+      \resumeItemListStart
+        \resumeItem{Shipped game projects in Godot and Unity, contributing to club showcases and inter-college competitions.}
+      \resumeItemListEnd
+
+    \resumePOR
+      {Umiam Hostel, IIT Guwahati}{Apr 2025 -- Apr 2026}
+      {Associate Welfare Secretary}
+      \resumeItemListStart
+        \resumeItem{Coordinated welfare events for hostel residents, managing budgets and inter-hostel activity scheduling.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------KEY ACHIEVEMENTS-----------
+\section{KEY ACHIEVEMENTS}
+ \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}]
+    \small
+    \item \textbf{Route Optimization Challenge:} Secured \textbf{4th Place} at Kriti, IIT Guwahati. \hfill \textit{2026}
+    \vspace{-2pt}
+    
+    \item \textbf{Codeforces:} Maximum Rating - \textbf{1402} $|$ Rated \textbf{Specialist} $|$ Handle $-$ \href{https://codeforces.com/profile/kal_se_CP_chalu}{\textit{tinyurl.com/adityav27}}
+    \vspace{-2pt}
+    
+    \item \textbf{CodeChef:} Maximum Rating - \textbf{1511} $|$ Rated \textbf{2 Stars} $|$ Handle $-$ \href{https://www.codechef.com/users/genie_craft_28}{\textit{genie\_craft\_28}}
+    \vspace{-2pt}
+    \begin{itemize}[leftmargin=0.2in, label={--}]
+        \item Codechef Starters 241 (Div 4) : Secured \textbf{Global Rank 575} among \textbf{15,000+} participants. \hfill \textit{2026}
+    \end{itemize}
+    \vspace{-2pt}
+
+    \item \textbf{WorldQuant IQC 2025 -- Stage 1:} Rank \textbf{2,259} out of \textbf{77,000+} teams worldwide. \hfill \textit{2025}
+    \vspace{-2pt}
+    
+    \item \parbox[t]{0.92\linewidth}{\textbf{JEE Mains \& Advanced:} Secured \textbf{99.35 percentile} in JEE Mains and ranked among the \textbf{top 6.55\%} out of 1.86 lakh candidates in JEE Advanced.}\hfill \textit{2024}
+    \vspace{-2pt}
+    
+    \item \textbf{IISER Aptitude Test (IAT):} Secured \textbf{AIR 1296} among $\sim$35,000 candidates nationwide (Top $\sim$4\%). \hfill \textit{2024}
+ \end{itemize}
+
+\end{document}
